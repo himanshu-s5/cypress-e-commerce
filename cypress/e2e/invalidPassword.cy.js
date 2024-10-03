@@ -7,8 +7,8 @@ it.only('test', ()=>{
     cy.visit('https://www.amazon.in')
     cy.fixture('configData').then((data)=>{
         const ln = new LoginPage();
-        ln.setUsername(data.username);
-        ln.setPassword(data.invalidPassword);
+        ln.setUsername(data.valid.username);
+        ln.setPassword(data.invalid.password);
         cy.get('.a-size-large').contains('Solve this puzzle')
         
     })

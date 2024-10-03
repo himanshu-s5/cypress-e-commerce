@@ -1,12 +1,12 @@
 {
+  "valid": {
     "username": "anshu23hhh@gmail.com",
     "password": "Amazon@7073",
-    "item":"data cable type c"
+    "item": "data cable type c"
   },
-
-  {
-  "invalidUser":"bfjhhehjbnjbdfbh@gmail.com",
-  "invalidPassword":"jhebdhjjehdjhed",
-  "invalidItem":"1234hfbkhjfggfrf"
+  "invalid": {
+    "username": "bfjhhehjbnjbdfbh@gmail.com",
+    "password": "jhebdhjjehdjhed",
+    "item": "1234hfbkhjfggfrf"
   }
-  
+}

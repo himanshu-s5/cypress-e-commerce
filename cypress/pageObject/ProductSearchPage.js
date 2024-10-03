@@ -1,24 +1,23 @@
 
-class product{
+class Product{
 
 
-    common(){
+    common(item){
 
-    const searchItem = cy.get('#twotabsearchtextbox').type(item);
-    const clickSearch = cy.get('#nav-search-submit-button').click();
+    cy.get('#twotabsearchtextbox').type(item);
+    cy.get('#nav-search-submit-button').click();
     }
+
     validSearch(item){
         
-        this.searchItem;
-        this.clickSearch;
-        cy.get(".a-color-state.a-text-bold").should('have.contain', "data-cable type c")
+        this.common(item);
+        cy.get(".a-color-state").should('have.contain', "data cable type c")
 
     }
 
     invalidSearch(item){
 
-        this.searchItem;
-        this.clickSearch;
+        this.common(item)
         cy.get(".a-size-medium a-color-base").first().contains("No results")
 
     }   
