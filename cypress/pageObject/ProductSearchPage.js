@@ -22,7 +22,6 @@ class product{
         cy.get(".a-size-medium a-color-base").first().contains("No results")
 
     }   
-    
-    
-
 }
+
+export default Product

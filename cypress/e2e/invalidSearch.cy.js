@@ -1,6 +1,6 @@
 import Product from "../pageObject/ProductSearchPage";
 
-describe('Search Item test', ()=>{
+describe('Invalid Item test', ()=>{
 
     it('test',()=>{
 
@@ -8,7 +8,7 @@ describe('Search Item test', ()=>{
         cy.fixture('configData').then((data)=>{
 
             const product = new Product();
-            product.validSearch(data.item)
+            product.validSearch(data.invalidItem)
 
         })
 
