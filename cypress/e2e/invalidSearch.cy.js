@@ -8,7 +8,7 @@ describe('Invalid Item test', ()=>{
         cy.fixture('configData').then((data)=>{
 
             const product = new Product();
-            product.validSearch(data.invalid.item)
+            product.invalidSearch(data.invalid.item)
 
         })
 

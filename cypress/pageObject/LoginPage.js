@@ -3,6 +3,7 @@ class Login{
     setUsername(username){
     
         cy.get('#nav-link-accountList-nav-line-1').click()
+        cy.wait(2000)
         cy.get('#ap_email').type(username)
         cy.get('#continue').click()
     }

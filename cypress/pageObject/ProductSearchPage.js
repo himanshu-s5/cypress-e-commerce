@@ -18,7 +18,7 @@ class Product{
     invalidSearch(item){
 
         this.common(item)
-        cy.get(".a-size-medium a-color-base").first().contains("No results")
+        cy.get(".s-no-outline > :nth-child(1) > :nth-child(1)").contains("No results")
 
     }   
 }
