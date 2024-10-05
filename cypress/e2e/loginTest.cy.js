@@ -10,7 +10,7 @@ it.only('test', ()=>{
         ln.setUsername(data.valid.username);
         cy.get('.a-span5 > .a-form-label').contains('Password')
         ln.setPassword(data.valid.password);
-        ln.validateDashboard();configData
+        ln.validateDashboard();
 
 
     })
