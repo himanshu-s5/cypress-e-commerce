@@ -6,20 +6,20 @@ class Product{
 
     cy.get('#twotabsearchtextbox').type(item);
     cy.get('#nav-search-submit-button').click();
-    const cartButton = cy.get('#a-autoid-3-announce')
+
     }
 
     validSearch(item){
         
         this.common(item);
-        cy.get(".a-color-state").should('have.contain', "data cable type c")
+        cy.get(".a-color-state").should('contain.text', "data cable type c")
 
     }
 
     invalidSearch(item){
 
         this.common(item)
-        cy.get(".s-no-outline > :nth-child(1) > :nth-child(1)").contains("No results")
+        cy.get(".s-no-outline > :nth-child(1) > :nth-child(1)").should('contain.',"No results")
 
     }
 }
