@@ -22,7 +22,6 @@ class Product{
         cy.get(".s-no-outline > :nth-child(1) > :nth-child(1)").contains("No results")
 
     }
-
 }
 
 export default Product
