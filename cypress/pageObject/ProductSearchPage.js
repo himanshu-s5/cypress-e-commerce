@@ -12,7 +12,7 @@ class Product{
     validSearch(item){
         
         this.common(item);
-        cy.get(".a-color-state").should('contain.text', "data cable type c")
+        cy.get(".a-color-state").should('contain.text', item)
 
     }
 
