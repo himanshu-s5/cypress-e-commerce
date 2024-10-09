@@ -19,7 +19,7 @@ class Product{
     invalidSearch(item){
 
         this.common(item)
-        cy.get(".s-no-outline > :nth-child(1) > :nth-child(1)").should('contain.',"No results")
+        cy.get(".s-no-outline > :nth-child(1) > :nth-child(1)").should('contain.text',"No results")
 
     }
 }
